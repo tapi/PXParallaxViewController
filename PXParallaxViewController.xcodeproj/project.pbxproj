@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036FB47615DACE6F009C5E5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FB47515DACE6F009C5E5C /* UIKit.framework */; };
+		036FB47815DACE6F009C5E5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FB47715DACE6F009C5E5C /* Foundation.framework */; };
+		036FB47A15DACE6F009C5E5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FB47915DACE6F009C5E5C /* CoreGraphics.framework */; };
+		036FB48015DACE6F009C5E5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 036FB47E15DACE6F009C5E5C /* InfoPlist.strings */; };
+		036FB48215DACE6F009C5E5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FB48115DACE6F009C5E5C /* main.m */; };
+		036FB48615DACE6F009C5E5C /* PXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FB48515DACE6F009C5E5C /* PXAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		036FB47115DACE6F009C5E5C /* PXParallaxViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXParallaxViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036FB47515DACE6F009C5E5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		036FB47715DACE6F009C5E5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		036FB47915DACE6F009C5E5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		036FB47D15DACE6F009C5E5C /* PXParallaxViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PXParallaxViewController-Info.plist"; sourceTree = "<group>"; };
+		036FB47F15DACE6F009C5E5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		036FB48115DACE6F009C5E5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		036FB48315DACE6F009C5E5C /* PXParallaxViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PXParallaxViewController-Prefix.pch"; sourceTree = "<group>"; };
+		036FB48415DACE6F009C5E5C /* PXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXAppDelegate.h; sourceTree = "<group>"; };
+		036FB48515DACE6F009C5E5C /* PXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		036FB46E15DACE6F009C5E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036FB47615DACE6F009C5E5C /* UIKit.framework in Frameworks */,
+				036FB47815DACE6F009C5E5C /* Foundation.framework in Frameworks */,
+				036FB47A15DACE6F009C5E5C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		036FB46615DACE6F009C5E5C = {
+			isa = PBXGroup;
+			children = (
+				036FB47B15DACE6F009C5E5C /* PXParallaxViewController */,
+				036FB47415DACE6F009C5E5C /* Frameworks */,
+				036FB47215DACE6F009C5E5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		036FB47215DACE6F009C5E5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				036FB47115DACE6F009C5E5C /* PXParallaxViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		036FB47415DACE6F009C5E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				036FB47515DACE6F009C5E5C /* UIKit.framework */,
+				036FB47715DACE6F009C5E5C /* Foundation.framework */,
+				036FB47915DACE6F009C5E5C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		036FB47B15DACE6F009C5E5C /* PXParallaxViewController */ = {
+			isa = PBXGroup;
+			children = (
+				036FB48415DACE6F009C5E5C /* PXAppDelegate.h */,
+				036FB48515DACE6F009C5E5C /* PXAppDelegate.m */,
+				036FB47C15DACE6F009C5E5C /* Supporting Files */,
+			);
+			path = PXParallaxViewController;
+			sourceTree = "<group>";
+		};
+		036FB47C15DACE6F009C5E5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				036FB47D15DACE6F009C5E5C /* PXParallaxViewController-Info.plist */,
+				036FB47E15DACE6F009C5E5C /* InfoPlist.strings */,
+				036FB48115DACE6F009C5E5C /* main.m */,
+				036FB48315DACE6F009C5E5C /* PXParallaxViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		036FB47015DACE6F009C5E5C /* PXParallaxViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036FB48915DACE6F009C5E5C /* Build configuration list for PBXNativeTarget "PXParallaxViewController" */;
+			buildPhases = (
+				036FB46D15DACE6F009C5E5C /* Sources */,
+				036FB46E15DACE6F009C5E5C /* Frameworks */,
+				036FB46F15DACE6F009C5E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PXParallaxViewController;
+			productName = PXParallaxViewController;
+			productReference = 036FB47115DACE6F009C5E5C /* PXParallaxViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		036FB46815DACE6F009C5E5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PX;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = 500px;
+			};
+			buildConfigurationList = 036FB46B15DACE6F009C5E5C /* Build configuration list for PBXProject "PXParallaxViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 036FB46615DACE6F009C5E5C;
+			productRefGroup = 036FB47215DACE6F009C5E5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				036FB47015DACE6F009C5E5C /* PXParallaxViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		036FB46F15DACE6F009C5E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036FB48015DACE6F009C5E5C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036FB46D15DACE6F009C5E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036FB48215DACE6F009C5E5C /* main.m in Sources */,
+				036FB48615DACE6F009C5E5C /* PXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		036FB47E15DACE6F009C5E5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036FB47F15DACE6F009C5E5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		036FB48715DACE6F009C5E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		036FB48815DACE6F009C5E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036FB48A15DACE6F009C5E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PXParallaxViewController/PXParallaxViewController-Prefix.pch";
+				INFOPLIST_FILE = "PXParallaxViewController/PXParallaxViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		036FB48B15DACE6F009C5E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PXParallaxViewController/PXParallaxViewController-Prefix.pch";
+				INFOPLIST_FILE = "PXParallaxViewController/PXParallaxViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036FB46B15DACE6F009C5E5C /* Build configuration list for PBXProject "PXParallaxViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036FB48715DACE6F009C5E5C /* Debug */,
+				036FB48815DACE6F009C5E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		036FB48915DACE6F009C5E5C /* Build configuration list for PBXNativeTarget "PXParallaxViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036FB48A15DACE6F009C5E5C /* Debug */,
+				036FB48B15DACE6F009C5E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 036FB46815DACE6F009C5E5C /* Project object */;
+}
