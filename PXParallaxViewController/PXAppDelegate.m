@@ -31,18 +31,21 @@
     return YES;
 }
 
+/**
+ *	tests to make sure delegate methods are forwarded properly.
+ */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-	usleep(0);
+	NSLog(@"%s was forwarded", __PRETTY_FUNCTION__);
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
-	usleep(0);
+	NSLog(@"%s was forwarded", __PRETTY_FUNCTION__);
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-	usleep(0);
+	NSLog(@"%s was forwarded", __PRETTY_FUNCTION__);
 }
 @end
