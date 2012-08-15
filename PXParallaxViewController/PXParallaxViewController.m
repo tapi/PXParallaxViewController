@@ -44,9 +44,6 @@ static CGFloat ImageHeight  = 300.0;
 	{
 		_parallaxHeight = DEFAULT_PARALLAX_HEIGHT;
 		
-		_contentView = contentView;
-		_parallaxView = parallaxView;
-
 		_parallaxScrollView  = [[UIScrollView alloc] initWithFrame:CGRectZero];
         _parallaxScrollView.backgroundColor                  = [UIColor clearColor];
         _parallaxScrollView.showsHorizontalScrollIndicator   = NO;
@@ -57,10 +54,10 @@ static CGFloat ImageHeight  = 300.0;
         _contentScrollView.delegate                     = self;
 
 		[self.view addSubview:_parallaxScrollView];
-		[_parallaxScrollView addSubview:_parallaxView];
+		self.parallaxView = parallaxView;
 		
 		[self.view addSubview:_contentScrollView];
-		[_contentScrollView addSubview:_contentView];
+		self.contentView = contentView;
 		
 		[_contentScrollView addObserver:self forKeyPath:@"delegate" options:NSKeyValueObservingOptionNew context:nil];
 	}
@@ -79,6 +76,23 @@ static CGFloat ImageHeight  = 300.0;
 			_contentScrollView.delegate = self;
 		}
 	}
+}
+
+
+- (void)setContentView:(UIView *)contentView
+{
+	_contentView = contentView;
+	_contentView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+	
+	[_contentScrollView addSubview:_contentView];
+}
+
+- (void)setParallaxView:(UIView *)parallaxView
+{
+	_parallaxView = parallaxView;
+	_parallaxView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+	
+	[_parallaxScrollView addSubview:_parallaxView];
 }
 
 #pragma mark - Parallax effect
