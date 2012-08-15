@@ -27,11 +27,29 @@
 
 
 @interface PXParallaxViewController : UIViewController <UIScrollViewDelegate>
+/**
+ * The scrollview that contains the content
+ */
 @property (nonatomic, readonly) UIScrollView *contentScrollView;
+
+/**
+ * The scrollview that contains the parallax View
+ */
 @property (nonatomic, readonly) UIScrollView *parallaxScrollView;
 
+/**
+ * The view to be shown with the parallax effect
+ */
 @property (nonatomic, strong) UIView *parallaxView;
+
+/**
+ * The content view that obscures the parallax view
+ */
 @property (nonatomic, strong) UIView *contentView;
+
+/**
+ * The visible height of the parallax view at rest
+ */
 @property (nonatomic, assign) CGFloat parallaxHeight;
 
 - (id)initWithContentView:(UIView *)contentView andParallaxView:(UIView *)parallaxView;

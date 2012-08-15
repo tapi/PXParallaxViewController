@@ -7,4 +7,9 @@ the content scrollview use delegate methods to update the offsets but will forwa
 delegate methods is you set its delegate, currently this done a bit clumsily, I may revise
 this later using a bit of runtime manipulation.
 
+TODO:
+-----
+- There are some constants borrowed from RBParallaxTableViewController that might better 
+be computed properties for this kind of implementation.
+
 [1]: https://github.com/Rheeseyb/RBParallaxTableViewController
