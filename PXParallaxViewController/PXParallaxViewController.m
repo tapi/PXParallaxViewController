@@ -53,10 +53,7 @@ static CGFloat ImageHeight  = 300.0;
         _contentScrollView.backgroundColor              = [UIColor clearColor];
         _contentScrollView.delegate                     = self;
 
-		[self.view addSubview:_parallaxScrollView];
 		self.parallaxView = parallaxView;
-		
-		[self.view addSubview:_contentScrollView];
 		self.contentView = contentView;
 		
 		[_contentScrollView addObserver:self forKeyPath:@"delegate" options:NSKeyValueObservingOptionNew context:nil];
