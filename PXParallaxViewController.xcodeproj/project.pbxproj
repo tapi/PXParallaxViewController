@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031B6AED15E2B40200BFE342 /* PXCustomInteractionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 031B6AEC15E2B40200BFE342 /* PXCustomInteractionTableView.m */; };
 		036FB47615DACE6F009C5E5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FB47515DACE6F009C5E5C /* UIKit.framework */; };
 		036FB47815DACE6F009C5E5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FB47715DACE6F009C5E5C /* Foundation.framework */; };
 		036FB47A15DACE6F009C5E5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036FB47915DACE6F009C5E5C /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031B6AEB15E2B40200BFE342 /* PXCustomInteractionTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXCustomInteractionTableView.h; sourceTree = "<group>"; };
+		031B6AEC15E2B40200BFE342 /* PXCustomInteractionTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXCustomInteractionTableView.m; sourceTree = "<group>"; };
 		036FB47115DACE6F009C5E5C /* PXParallaxViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXParallaxViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036FB47515DACE6F009C5E5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		036FB47715DACE6F009C5E5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +95,8 @@
 				036FB54215DEDE52009C5E5C /* PXCustomInteractionScrollViewDelegate.h */,
 				036FB54315DEDE81009C5E5C /* PXCustomInteractionScrollView.h */,
 				036FB54415DEDE81009C5E5C /* PXCustomInteractionScrollView.m */,
+				031B6AEB15E2B40200BFE342 /* PXCustomInteractionTableView.h */,
+				031B6AEC15E2B40200BFE342 /* PXCustomInteractionTableView.m */,
 			);
 			path = PXParallaxViewController;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				036FB48215DACE6F009C5E5C /* main.m in Sources */,
 				036FB48615DACE6F009C5E5C /* PXAppDelegate.m in Sources */,
 				036FB54515DEDE81009C5E5C /* PXCustomInteractionScrollView.m in Sources */,
+				031B6AED15E2B40200BFE342 /* PXCustomInteractionTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
