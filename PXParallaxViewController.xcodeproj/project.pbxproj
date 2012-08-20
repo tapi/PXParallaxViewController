@@ -18,7 +18,6 @@
 		036FB49415DAD366009C5E5C /* testContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036FB49315DAD366009C5E5C /* testContentView.xib */; };
 		036FB49515DAD455009C5E5C /* PXParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FB48D15DACEA4009C5E5C /* PXParallaxViewController.m */; };
 		036FB54515DEDE81009C5E5C /* PXCustomInteractionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FB54415DEDE81009C5E5C /* PXCustomInteractionScrollView.m */; };
-		036FB54A15DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).m in Sources */ = {isa = PBXBuildFile; fileRef = 036FB54915DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +39,6 @@
 		036FB54215DEDE52009C5E5C /* PXCustomInteractionScrollViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXCustomInteractionScrollViewDelegate.h; sourceTree = "<group>"; };
 		036FB54315DEDE81009C5E5C /* PXCustomInteractionScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXCustomInteractionScrollView.h; sourceTree = "<group>"; };
 		036FB54415DEDE81009C5E5C /* PXCustomInteractionScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXCustomInteractionScrollView.m; sourceTree = "<group>"; };
-		036FB54815DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation(ForwardedConstruction).h"; sourceTree = "<group>"; };
-		036FB54915DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation(ForwardedConstruction).m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,18 +124,8 @@
 		036FB54615DEF223009C5E5C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				036FB54715DEF23B009C5E5C /* NSInvocationForwardedConstruction */,
 			);
 			name = Vendor;
-			sourceTree = "<group>";
-		};
-		036FB54715DEF23B009C5E5C /* NSInvocationForwardedConstruction */ = {
-			isa = PBXGroup;
-			children = (
-				036FB54815DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).h */,
-				036FB54915DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).m */,
-			);
-			path = NSInvocationForwardedConstruction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +198,6 @@
 				036FB48215DACE6F009C5E5C /* main.m in Sources */,
 				036FB48615DACE6F009C5E5C /* PXAppDelegate.m in Sources */,
 				036FB54515DEDE81009C5E5C /* PXCustomInteractionScrollView.m in Sources */,
-				036FB54A15DEF23B009C5E5C /* NSInvocation(ForwardedConstruction).m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

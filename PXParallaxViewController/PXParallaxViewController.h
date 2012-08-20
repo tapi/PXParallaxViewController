@@ -37,7 +37,7 @@
 /**
  * The scrollview that contains the parallax View
  */
-@property (nonatomic, readonly) UIScrollView *parallaxScrollView;
+@property (nonatomic, readonly) PXCustomInteractionScrollView *parallaxScrollView;
 
 /**
  * The view to be shown with the parallax effect

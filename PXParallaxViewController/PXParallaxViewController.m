@@ -44,7 +44,7 @@ static CGFloat ImageHeight  = 300.0;
 	{
 		_parallaxHeight = DEFAULT_PARALLAX_HEIGHT;
 		
-		_parallaxScrollView  = [[UIScrollView alloc] initWithFrame:CGRectZero];
+		_parallaxScrollView  = [[PXCustomInteractionScrollView alloc] initWithFrame:CGRectZero];
         _parallaxScrollView.backgroundColor                  = [UIColor clearColor];
         _parallaxScrollView.showsHorizontalScrollIndicator   = NO;
         _parallaxScrollView.showsVerticalScrollIndicator     = NO;
