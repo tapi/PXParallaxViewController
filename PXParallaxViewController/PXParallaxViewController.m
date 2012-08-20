@@ -49,7 +49,7 @@ static CGFloat ImageHeight  = 300.0;
         _parallaxScrollView.showsHorizontalScrollIndicator   = NO;
         _parallaxScrollView.showsVerticalScrollIndicator     = NO;
 		
-		_contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+		_contentScrollView = [[PXCustomInteractionScrollView alloc] initWithFrame:CGRectZero];
         _contentScrollView.backgroundColor              = [UIColor clearColor];
         _contentScrollView.delegate                     = self;
 
@@ -271,3 +271,5 @@ static CGFloat ImageHeight  = 300.0;
 	}
 }
 @end
+
+

@@ -25,12 +25,14 @@
 //  SOFTWARE.
 //
 
+#import "PXCustomInteractionScrollViewDelegate.h"
+#import "PXCustomInteractionScrollView.h"
 
 @interface PXParallaxViewController : UIViewController <UIScrollViewDelegate>
 /**
  * The scrollview that contains the content
  */
-@property (nonatomic, readonly) UIScrollView *contentScrollView;
+@property (nonatomic, readonly) PXCustomInteractionScrollView *contentScrollView;
 
 /**
  * The scrollview that contains the parallax View
