@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "PXAppDelegate.h"
+#import "PXParallaxDemoAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([PXAppDelegate class]));
+	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([PXParallaxDemoAppDelegate class]));
 	}
 }

@@ -1,5 +1,5 @@
 //
-//  PXAppDelegate.h
+//  PXParallaxDemoAppDelegate.h
 //  PXParallaxViewController
 //
 //  Created by Paddy O'Brien on 2012-08-14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PXAppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate>
+@interface PXParallaxDemoAppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
