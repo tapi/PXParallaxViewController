@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UIScrollView (PXDelegateMethodHackery)
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer;
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer;
-@end
-
 /**
  * The idea is that any of the view interaction methods on UI scrollview or the UIGestureRecognizer delegate methods that return a BOOL will
  * hand off to a delegate first. If the delegate returns YES then we return YES. If the delegate returns NO we return the result obtained by
@@ -26,11 +20,6 @@
 #pragma mark - UIScrollView Overrides
 - (BOOL)scrollView:(UIScrollView *)scrollView touchesShouldBegin:(NSSet *)touches withEvent:(UIEvent *)event inContentView:(UIView *)view;
 - (BOOL)scrollView:(UIScrollView *)scrollView touchesShouldCancelInContentView:(UIView *)view;
-
-#pragma mark - UIGestureRecognizer Overides
-- (BOOL)scrollView:(UIScrollView *)scrollView gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;
-- (BOOL)scrollView:(UIScrollView *)scrollView gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer;
-- (BOOL)scrollView:(UIScrollView *)scrollView gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer;
 @end
 
 

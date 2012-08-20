@@ -38,47 +38,4 @@
 	
 	return [super touchesShouldCancelInContentView:view];
 }
-
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
-{
-	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:gestureRecognizer:shouldReceiveTouch:)])
-	{
-		BOOL result = [_interactionDelegate scrollView:self gestureRecognizer:gestureRecognizer shouldReceiveTouch:touch];
-		if (result)
-		{
-			return YES;
-		}
-	}
-	
-	return [super gestureRecognizer:gestureRecognizer shouldReceiveTouch:touch];
-}
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:)])
-	{
-		BOOL result = [_interactionDelegate scrollView:self gestureRecognizer:gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:otherGestureRecognizer];
-		if (result)
-		{
-			return YES;
-		}
-	}
-	
-	return [super gestureRecognizer:gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:otherGestureRecognizer];
-}
-
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
-{
-	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:gestureRecognizerShouldBegin:)])
-	{
-		BOOL result = [_interactionDelegate scrollView:self gestureRecognizerShouldBegin:gestureRecognizer];
-		if (result)
-		{
-			return YES;
-		}
-	}
-	
-	return [super gestureRecognizerShouldBegin:gestureRecognizer];
-}
 @end
