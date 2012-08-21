@@ -17,6 +17,7 @@
  * It's a pity that catagories can't call super.
  */
 @protocol PXCustomInteractionScrollViewDelegate <NSObject>
+@optional
 - (BOOL)scrollViewInteractionShouldFailSafely:(UIScrollView *)scrollView;
 
 #pragma mark - UIScrollView Overrides
