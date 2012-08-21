@@ -60,4 +60,36 @@
 	
 	return [super touchesShouldCancelInContentView:view];
 }
+
+
+#pragma mark - UIGestureRecognizer Overides
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:gestureRecognizer:shouldReceiveTouch:)])
+	{
+		return [_interactionDelegate scrollView:self gestureRecognizer:gestureRecognizer shouldReceiveTouch:touch];
+	}
+	
+	return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:)])
+	{
+		return [_interactionDelegate scrollView:self gestureRecognizer:gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:otherGestureRecognizer];
+	}
+	
+	return NO;
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:gestureRecognizerShouldBegin:)])
+	{
+		return [_interactionDelegate scrollView:self gestureRecognizerShouldBegin:gestureRecognizer];
+	}
+	
+	return YES;
+}
 @end
