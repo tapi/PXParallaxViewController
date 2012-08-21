@@ -13,10 +13,21 @@
 #pragma mark - UIScrollView Overrides
 - (BOOL)touchesShouldBegin:(NSSet *)touches withEvent:(UIEvent *)event inContentView:(UIView *)view
 {
+	BOOL failsSafely = YES;
+	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollViewInteractionShouldFailSafely:)])
+	{
+		failsSafely = [_interactionDelegate scrollViewInteractionShouldFailSafely:self];
+	}
+	
 	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollView:touchesShouldBegin:withEvent:inContentView:)])
 	{
 		BOOL result = [_interactionDelegate scrollView:self touchesShouldBegin:touches withEvent:event inContentView:view];
-		if (result)
+
+		if (failsSafely == NO)
+		{
+			return result;
+		}
+		else if (result)
 		{
 			return YES;
 		}
@@ -27,10 +38,21 @@
 
 - (BOOL)touchesShouldCancelInContentView:(UIView *)view
 {
+	BOOL failsSafely = YES;
+	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(scrollViewInteractionShouldFailSafely:)])
+	{
+		failsSafely = [_interactionDelegate scrollViewInteractionShouldFailSafely:self];
+	}
+	
 	if (_interactionDelegate && [_interactionDelegate respondsToSelector:@selector(touchesShouldCancelInContentView:)])
 	{
 		BOOL result = [_interactionDelegate scrollView:self touchesShouldCancelInContentView:view];
-		if (result)
+
+		if (failsSafely == NO)
+		{
+			return result;
+		}
+		else if (result)
 		{
 			return YES;
 		}

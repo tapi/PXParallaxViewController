@@ -61,7 +61,6 @@
 		036FB46615DACE6F009C5E5C = {
 			isa = PBXGroup;
 			children = (
-				036FB54615DEF223009C5E5C /* Vendor */,
 				036FB48E15DACEAB009C5E5C /* PXParallaxViewController Demo */,
 				036FB47B15DACE6F009C5E5C /* PXParallaxViewController */,
 				036FB47415DACE6F009C5E5C /* Frameworks */,
@@ -124,13 +123,6 @@
 				036FB49315DAD366009C5E5C /* testContentView.xib */,
 			);
 			name = "PXParallaxViewController Demo";
-			sourceTree = "<group>";
-		};
-		036FB54615DEF223009C5E5C /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
